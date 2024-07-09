@@ -18,7 +18,7 @@ module LetsEncrypt
 
       def copy_migrations
         migration_template 'migration.rb',
-                           'db/migrate/create_letsencrypt_certificates.rb'
+                           'db/migrate/create_certificates.rb'
       end
 
       def required_migration_version?

@@ -1,4 +1,4 @@
-# LetsEncrypt [![Gem Version](https://badge.fury.io/rb/rails-letsencrypt.svg)](https://badge.fury.io/rb/rails-letsencrypt) [![Code Climate](https://codeclimate.com/github/elct9620/rails-letsencrypt/badges/gpa.svg)](https://codeclimate.com/github/elct9620/rails-letsencrypt)
+# Rails-HTTPS
 
 Provide manageable Let's Encrypt Certificate for Rails.
 

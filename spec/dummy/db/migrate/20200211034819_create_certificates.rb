@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 # :nodoc:
-class CreateLetsencryptCertificates < ActiveRecord::Migration[5.2]
+class CreateCertificates < ActiveRecord::Migration[5.2]
   def change
-    create_table :letsencrypt_certificates do |t|
+    create_table :certificates do |t|
       t.string   :domain
       t.text     :certificate, limit: 65535
       t.text     :intermediaries, limit: 65535

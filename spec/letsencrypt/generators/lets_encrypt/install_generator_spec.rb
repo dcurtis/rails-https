@@ -20,6 +20,6 @@ RSpec.describe LetsEncrypt::Generators::InstallGenerator do
   end
 
   it do
-    generator.assert_migration 'db/migrate/create_letsencrypt_certificates.rb', /def change/
+    generator.assert_migration 'db/migrate/create_certificates.rb', /def change/
   end
 end

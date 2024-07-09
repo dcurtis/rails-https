@@ -3,7 +3,7 @@
 module LetsEncrypt
   # == Schema Information
   #
-  # Table name: letsencrypt_certificates
+  # Table name: certificates
   #
   #  id                  :integer          not null, primary key
   #  domain              :string(255)
@@ -19,14 +19,14 @@ module LetsEncrypt
   #
   # Indexes
   #
-  #  index_letsencrypt_certificates_on_domain       (domain)
-  #  index_letsencrypt_certificates_on_renew_after  (renew_after)
+  #  index_certificates_on_domain       (domain)
+  #  index_certificates_on_renew_after  (renew_after)
   #
   class Certificate < ApplicationRecord
     include CertificateVerifiable
     include CertificateIssuable
 
-    self.table_name = 'letsencrypt_certificates'
+    self.table_name = 'certificates'
 
     validates :domain, presence: true, uniqueness: true
 

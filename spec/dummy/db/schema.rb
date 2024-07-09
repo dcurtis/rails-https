@@ -12,7 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2020_02_11_034819) do
 
-  create_table "letsencrypt_certificates", force: :cascade do |t|
+  create_table "certificates", force: :cascade do |t|
     t.string "domain"
     t.text "certificate", limit: 65535
     t.text "intermediaries", limit: 65535
@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 2020_02_11_034819) do
     t.string "verification_string"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["domain"], name: "index_letsencrypt_certificates_on_domain"
-    t.index ["renew_after"], name: "index_letsencrypt_certificates_on_renew_after"
+    t.index ["domain"], name: "index_certificates_on_domain"
+    t.index ["renew_after"], name: "index_certificates_on_renew_after"
   end
 
 end
